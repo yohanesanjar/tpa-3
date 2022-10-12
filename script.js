@@ -1,11 +1,11 @@
-const API_KEY = 'api_key=d14f80e1a9c945f21505628be7021751'
-const BASE_URL = 'https://api.themoviedb.org/3'
-const API_URL = BASE_URL + '/discover/movie?'+API_KEY + '&sort_by=popularity.desc&page=1'
-const IMG_URL = 'https://image.tmdb.org/t/p/w500'
-const searchURL = BASE_URL + '/search/movie?'+API_KEY
+const API_KEY = 'api_key=d14f80e1a9c945f21505628be7021751' //Mengambil API key
+const BASE_URL = 'https://api.themoviedb.org/3' //Base URL
+const API_URL = BASE_URL + '/discover/movie?'+API_KEY + '&sort_by=popularity.desc&page=1' //API URL berdasarkan page=1
+const IMG_URL = 'https://image.tmdb.org/t/p/w500' //Mengambil gambar dari tmdb api
+const searchURL = BASE_URL + '/search/movie?'+API_KEY //Search
 
-const col = document.getElementById('main')
-const form = document.getElementById('form')
+const col = document.getElementById('main') //Mengambil Id main dari index.html
+const form = document.getElementById('form') //Mengambil Id form dari index.html
 
 getMovies(API_URL)
 
