@@ -9,6 +9,7 @@ const form = document.getElementById('form') //Mengambil Id form dari index.html
 
 getMovies(API_URL)
 
+//Menampilkan data movies API dalam array
 function getMovies(url){
     fetch(url).then(res => res.json()).then(data => {
         console.log(data.results);
@@ -16,6 +17,7 @@ function getMovies(url){
     })
 }
 
+// menampilkan dftar movies dari tmdb api
 function showMovies(data){
     col.innerHTML = ''
 
@@ -45,6 +47,7 @@ function showMovies(data){
     })
 }
 
+//Membuat fitur search
 form.addEventListener('submit', (e) => {
   e.preventDefault()
 
